@@ -2,6 +2,8 @@ Agility Games
 
 Assembling interactive business simulations from reusable gameboards, spaces, and capabilities.
 
+![Agility Games hero-banner.png](../assets/hero-banner.png)
+
 Agility Games is an open engineering initiative for creating interactive, visual, and extensible business simulations. It combines the familiar experience of board games with software engineering, organizational decision-making, strategic planning, and experiential learning.
 
 Rather than building each game from scratch, Agility Games assembles games from reusable building blocks.
