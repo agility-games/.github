@@ -1,4 +1,4 @@
-Agility Games
+# Agility Games
 
 Assembling interactive business simulations from reusable gameboards, spaces, and capabilities.
 
@@ -12,7 +12,7 @@ Powered by the Open Engineering approach, Agility Games brings together Bricks, 
 
 ⸻
 
-The Idea
+## The Idea
 
 Imagine a Monopoly-like gameboard where spaces represent real-world business and engineering activities.
 
@@ -50,7 +50,7 @@ Scene	A visual environment rendered using technologies such as Babylon.js
 
 This separation allows game designers to reuse capabilities across multiple games without duplicating their implementations.
 
-Gameboards and Spaces
+## Gameboards and Spaces
 
 A central concept within Agility Games is the Gameboard Assembly.
 
@@ -73,7 +73,7 @@ For example:
 
 Illustrative gameboard layout; individual games may define different spaces, connections, and rules.
 
-Space Assemblies
+## Space Assemblies
 
 Each space is independently defined and can provide:
 
@@ -93,7 +93,7 @@ The gameboard determines where a space appears and how players reach it.
 
 The Space Assembly determines what players encounter and can do there.
 
-Three Levels of Visualization
+## Three Levels of Visualization
 
 Agility Games supports three complementary visualization levels.
 
@@ -111,7 +111,7 @@ Players can enter a detailed environment associated with a space, such as a virt
 
 These levels allow players to move naturally between strategic overview and operational detail.
 
-Babylon.js Visualization
+## Babylon.js Visualization
 
 Agility Games proposes Babylon.js as a 3D visualization technology.
 
@@ -133,7 +133,7 @@ This enables:
 
 The visualization remains separate from the authoritative game state and rules.
 
-Game Mechanics and Capabilities
+## Game Mechanics and Capabilities
 
 Agility Games aims to support reusable behavioral capabilities through capsules.
 
@@ -154,12 +154,12 @@ These capabilities can be assembled differently for different games.
 
 A strategy simulation may emphasize decisions and scoring, while a software engineering simulation may emphasize missions, assessments, and technical activities.
 
-Declarative Game Composition
+## Declarative Game Composition
 
 Agility Games aims to describe gameboards and spaces using declarative specifications.
 
 For example:
-
+```
 id: agility-gameboard
 kind: gameboard-assembly
 name: Agility Gameboard
@@ -181,17 +181,17 @@ connections:
     to: strategy
   - from: strategy
     to: devbench
-
+```
 A Gameboard Assembly resolves these definitions into a playable experience.
 
 The specification describes the composition without prescribing every implementation detail.
 
-Powered by Open Engineering
+## Powered by Open Engineering
 
 Agility Games applies the broader Open Engineering approach to the domain of interactive games and simulations.
 
 The relationship can be expressed as:
-
+```
 Open Engineering
 │
 ├── Bricks
@@ -213,10 +213,10 @@ Open Engineering
         ├── Space Assemblies
         ├── Player Interactions
         └── Visualizations
-
+```
 Agility Games provides the game-specific definitions, capabilities, and compositions that enable such products.
 
-Related Open Engineering Organizations
+## Related Open Engineering Organizations
 
 * Open Engineering Bricks — Reusable architectural building blocks.
 * Open Engineering Capsules — Reusable behavioral capabilities.
@@ -226,7 +226,7 @@ Related Open Engineering Organizations
 * Open Engineering Products — Product definitions.
 * Open Engineering Narrators — Contextual narration capabilities.
 
-Agility Games and Agility Game
+## Agility Games and Agility Game
 
 The distinction between the platform and an individual game is intentional.
 
@@ -238,10 +238,10 @@ This separation allows the same underlying architecture to support multiple game
 
 See also Agility Game.
 
-Technology Direction
+## Technology Direction
 
 The proposed technology stack includes:
-
+```
 Technology	Purpose
 Babylon.js	Interactive 3D gameboards and environments
 SvelteKit	Web application and user interface
@@ -250,10 +250,10 @@ glTF / GLB	Reusable 3D models
 YAML / JSON	Declarative game and assembly definitions
 GitHub	Source management, collaboration, and releases
 Open Engineering	Reusable architectural composition and capabilities
-
+```
 Technology choices may evolve as implementations mature.
 
-Architectural Principles
+## Architectural Principles
 
 Agility Games follows several guiding principles:
 
@@ -266,7 +266,7 @@ Agility Games follows several guiding principles:
 7. Prefer declarative composition. Describe games through structured definitions rather than hardcoded arrangements.
 8. Design for extensibility. New spaces, capsules, missions, and gameboards should be composable without redesigning the platform.
 
-Vision
+## Vision
 
 Agility Games aims to make complex business and software engineering challenges understandable through interactive simulation.
 
